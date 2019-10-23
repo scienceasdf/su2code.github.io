@@ -49,7 +49,7 @@ and
 
 $$\bar{F}^{v} = \left \{ \begin{array}{c} \cdot \\ \bar{\bar{\tau}} \\ \bar{\bar{\tau}} \cdot \bar{v} + \kappa \nabla T  \end{array} \right  \}$$
 
-`TK:: tau dot v i.e. matrix dot vector ... what is that?`
+`TK:: tau dot v i.e. matrix dot vector ... As this is most likely matrix vector multiplication I would leave out the dot? Could be personal preference as well`
 
 where $$\rho$$ `TK:: I am a huge fan of giving units, maybe introducing a fixed nomenclature could be a good way to enforce consistency across domains (is it even possible to avoid double definition of a symbol? If not first come first serve principle).` is the fluid density [kg/s], $$\bar{v}=\left\lbrace u, v, w \right\rbrace^\mathsf{T}$$ $$\in$$ $$\mathbb{R}^3$$ is the flow speed in Cartesian system of reference [m/s], $$E$$ is the total energy per unit mass [J/kg], $$p$$ is the static pressure [Pa], $$\bar{\bar{\tau}}$$ is the viscous stress tensor [Pa], $$T$$ is the temperature [K], $$\kappa$$ is the thermal conductivity [W/(m*K)], and $$\mu$$ is the viscosity [Pa*s]. The viscous stress tensor can be expressed in vector notation as
 
