@@ -3,9 +3,15 @@ title: Governing Equations in SU2
 permalink: /docs/Theory/
 ---
 
+`TK:: Are all information that seem to be identical between FVM and FEM solver actually identical. E.g. Sutherlands law for viscosity or non-ideal fluids are available for the FEM solver, Turbulence models. Somewhere a disclaimer could be written s.th. like Unless you know exactly intend to use the nodal DG solver... Use the FVM solvers. I dont know how Edwin sees this guide. Because I might be an idea to leave the DG solver out of this completely. There is also no tutorial. If I am well informed, mesh genertion is not that straight forward either.  `
+
+`TK:: Btw I am not looking at correct punctuation at the end of the formulas as there is none ;)`
+
+`TK:: `
+
 **This guide is for version 7 only**
 
-This page contains a very brief summary of the different governing equation sets that are treated in each of the solvers within SU2. The reader will be referred to other references for the full detail of the numerical implementations, but we will also describe the approaches at a high level here.
+This page contains a very brief summary of the different governing equation sets that are treated in each of the solvers within SU2. The reader will be referred to other references `TK:: Good idea... no reference given though :) Sorry turbulence is given. Do you plan to include publications as well. That would be especially fitting for your incompressible paper.` for the full detail of the numerical implementations, but we will also describe the approaches at a high level here.
 
 ---
 
@@ -14,6 +20,7 @@ This page contains a very brief summary of the different governing equation sets
 - [Compressible Euler](#compressible-euler)
 - [Incompressible Navier-Stokes](#incompressible-rans)
 - [Incompressible Euler](#incompressible-euler)
+- [Turbulence Modeling](#turbulence-modeling) `TK:: section was missing`
 - [Elasticity](#elasticity)
 - [Heat Conduction](#heat-conduction)
   
@@ -42,15 +49,17 @@ and
 
 $$\bar{F}^{v} = \left \{ \begin{array}{c} \cdot \\ \bar{\bar{\tau}} \\ \bar{\bar{\tau}} \cdot \bar{v} + \kappa \nabla T  \end{array} \right  \}$$
 
-where $$\rho$$ is the fluid density, $$\bar{v}=\left\lbrace u, v, w \right\rbrace^\mathsf{T}$$ $$\in$$ $$\mathbb{R}^3$$ is the flow speed in Cartesian system of reference, $$E$$ is the total energy per unit mass, $$p$$ is the static pressure, $$\bar{\bar{\tau}}$$ is the viscous stress tensor, $$T$$ is the temperature, $$\kappa$$ is the thermal conductivity, and $$\mu$$ is the viscosity. The viscous stress tensor can be expressed in vector notation as
+`TK:: tau dot v i.e. matrix dot vector ... what is that?`
+
+where $$\rho$$ `TK:: I am a huge fan of giving units, maybe introducing a fixed nomenclature could be a good way to enforce consistency across domains (is it even possible to avoid double definition of a symbol? If not first come first serve principle).` is the fluid density [kg/s], $$\bar{v}=\left\lbrace u, v, w \right\rbrace^\mathsf{T}$$ $$\in$$ $$\mathbb{R}^3$$ is the flow speed in Cartesian system of reference [m/s], $$E$$ is the total energy per unit mass [J/kg], $$p$$ is the static pressure [Pa], $$\bar{\bar{\tau}}$$ is the viscous stress tensor [Pa], $$T$$ is the temperature [K], $$\kappa$$ is the thermal conductivity [W/(m*K)], and $$\mu$$ is the viscosity [Pa*s]. The viscous stress tensor can be expressed in vector notation as
 
 $$\bar{\bar{\tau}}= \mu \left ( \nabla \bar{v} + \nabla \bar{v}^{T} \right ) - \mu \frac{2}{3} \bar{\bar I} \left ( \nabla \cdot \bar{v} \right )$$
 
-Assuming a perfect gas with a ratio of specific heats $$\gamma$$ and specific gas constant $$R$$, one can close the system by determining pressure from $$p = (\gamma-1) \rho \left [ E - 0.5(\bar{v} \cdot \bar{v} ) \right ]$$ and temperature from the ideal gas equation of state $$T = p/(\rho R)$$. Conductivity can be a constant, or we assume a constant Prandtl number $$Pr$$ such that the conductivity varies with viscosity as $$\kappa = \mu c_p / Pr$$. 
+Assuming a perfect gas `TK:: Are there other options? If yes ` with a ratio of specific heats $$\gamma$$ [-] and specific gas constant $$R$$ [J/(K*mol)], one can close the system by determining pressure from $$p = (\gamma-1) \rho \left [ E - 0.5(\bar{v} \cdot \bar{v} ) \right ]$$ and temperature from the ideal gas equation of state $$T = p/(\rho R)$$. Conductivity can be a constant, or we assume a constant Prandtl number $$Pr$$ [-] such that the conductivity varies with viscosity as $$\kappa = \mu c_p / Pr$$. 
 
 It is also possible to model non-ideal fluids within SU2 using more advanced fluid models that are available, but this is not discussed here. Please see the tutorial on the topic.
 
-For laminar flows, $$\mu$$ is simply the dynamic viscosity $$\mu_{d}$$, which can be constant or assumed to satisfy Sutherland's law as a function of temperature alone, and $$Pr$$ is the dynamic Prandtl number $$Pr_d$$. For turbulent flows, we solve the Reynolds-averaged Navier-Stokes (RANS) equations. In accord with the standard approach to turbulence modeling based upon the Boussinesq hypothesis, which states that the effect of turbulence can be represented as an increased viscosity, the viscosity is divided into dynamic and turbulent components, or  $$\mu_{d}$$ and $$\mu_{t}$$, respectively. Therefore, the effective viscosity in becomes
+For laminar flows, $$\mu$$ is simply the dynamic viscosity $$\mu_{d}$$, which can be constant or assumed to satisfy Sutherland's law as a function of temperature alone, and $$Pr$$ is the dynamic Prandtl number $$Pr_d$$. For turbulent flows, we solve the Reynolds-averaged Navier-Stokes (RANS) equations. In accord with the standard approach to turbulence modeling based upon the Boussinesq hypothesis, which states that the effect of turbulence can be represented as an increased viscosity, the viscosity is divided into dynamic and turbulent components, or  $$\mu_{d}$$ and $$\mu_{t}$$, respectively. Therefore, the effective viscosity in becomes `TK:: I do like the litte explanation on how turbulent effects are accounted for. Maybe mention SA and SST is available. Explanation of Turbulence equations necessary (but that can follow in a later step.)` `TK:: For more detailed information see the seperate section` [Turbulence Modeling](#turbulence-modeling)
 
 $$\mu =\mu_{d}+\mu_{t}$$
 
@@ -117,7 +126,7 @@ where $$\rho$$ is the fluid density, $$\bar{v}=\left\lbrace u, v, w \right\rbrac
 
 $$\bar{\bar{\tau}}= \mu \left ( \nabla \bar{v} + \nabla \bar{v}^{T} \right ) - \mu \frac{2}{3} \bar{\bar I} \left ( \nabla \cdot \bar{v} \right )$$
 
-In the low-Mach form of the equations, the pressure is decomposed into thermodynamic and dynamic components. $$p$$ is interpreted as the dynamic pressure in the governing equations, and $$p_o$$ is the thermodynamic (operating) pressure, which is constant in space. The system is now closed with an equation of state for the density that is a function of temperature alone $$\rho  = \rho(T)$$. Assuming an ideal gas with a specific gas constant $$R$$, one can determine the density from $$\rho = \frac{p_o}{R T}$$. 
+In the low-Mach form of the equations, the pressure is decomposed into thermodynamic and dynamic components. $$p$$ is interpreted as the dynamic pressure in the governing equations, and $$p_o$$ is the thermodynamic (operating) pressure, which is constant in space. The system is now closed with an equation of state for the density that is a function of temperature alone $$\rho  = \rho(T)$$. Assuming an ideal gas with a specific gas constant $$R$$, one can determine the density from $$\rho = \frac{p_o}{R T}$$. `TK:: In the case of constant density the energy equation is effectively decoupled from the continuity and momentum equation and can therefore the energy equation is optional.`
 
 Conductivity can be a constant, or we assume a constant Prandtl number $$Pr$$ such that the conductivity varies with viscosity as $$\kappa = \mu c_p / Pr$$. For laminar flows, $$\mu$$ is simply the dynamic viscosity $$\mu_{d}$$, which can be constant or assumed to satisfy Sutherland's law as a function of temperature alone, and $$Pr$$ is the dynamic Prandtl number $$Pr_d$$. For turbulent flows, we solve the incompressible Reynolds-averaged Navier-Stokes (RANS) equations. In accord with the standard approach to turbulence modeling based upon the Boussinesq hypothesis, which states that the effect of turbulence can be represented as an increased viscosity, the viscosity is divided into dynamic and turbulent components, or  $$\mu_{d}$$ and $$\mu_{t}$$, respectively. Therefore, the effective viscosity in becomes
 
@@ -131,7 +140,9 @@ where we have introduced a turbulent Prandtl number $$Pr_t$$. The turbulent visc
 
 The governing equation set in the general form above is very flexible for handling a number of variations in the modeling assumptions, from constant density inviscid flows up to variable density turbulent flows with a two-way coupled energy equation and temperature-dependent transport coefficients. Natural convection and 2D axisymmetric problems can be treated in a straightforward manner with the addition of source terms.
 
-Within the `INC_NAVIER_STOKES` and `INC_RANS` solvers, we discretize the equations in space using a finite volume method (FVM) with a standard edge-based data structure on a dual grid with vertex-based schemes. The convective and viscous fluxes are evaluated at the midpoint of an edge. We apply a density-based scheme that is a generalization of artificial compressibility in order to achieve pressure-velocity coupling and solve the incompressible equations in a fully coupled manner.
+Within the `INC_NAVIER_STOKES` and `INC_RANS` solvers, we discretize the equations in space using a finite volume method (FVM) with a standard edge-based data structure on a dual grid with vertex-based schemes. The convective and viscous fluxes are evaluated at the midpoint of an edge. We apply a density-based scheme that is a generalization of artificial compressibility in order to achieve pressure-velocity coupling and solve the incompressible equations in a fully coupled manner. `TK:: Especially here it would be awesome to link the different tutorials that you made! I guess cross-referencing between tutorials, theory and other sections is a task for itself...`
+
+The interested reader is pointed towards a [this paper](https://economon.github.io/docs/AIAA-2018-3111.pdf) which contains more details.
 
 ---
 
@@ -164,6 +175,10 @@ Within the `INC_EULER` solver, we discretize the equations in space using a fini
 ---
 
 # Turbulence Modeling #
+
+| Solver | Version | 
+| --- | --- |
+| `RANS`, `INC_RANS` | 7.0.0 |
 
 The Shear Stress Transport (SST) model of Menter and the Spalart-Allmaras (S-A) model are two of the most common and widely used turbulence models. The S-A and SST standard models, along with several variants, are implemented in SU2. The reader is referred to the [NASA Turbulence Modeling Resource](https://turbmodels.larc.nasa.gov/index.html) (TMR) for the details of each specific model, as the versions in SU2 are implemented according to the well-described formulations found there.
 
@@ -204,3 +219,7 @@ $$ \bar{F}^{v}(U,\nabla U) = \kappa_s \nabla T $$
 where $$\kappa_s$$ is the thermal conductivity of the solid. The material properties of the solid are considered constant.
 
 Within the `HEAT_EQUATION_FVM` solver, we discretize the equations in space using a finite volume method (FVM) with a standard edge-based data structure on a dual grid with vertex-based schemes. The viscous flux is evaluated at the midpoint of an edge.
+
+
+`TK:: Alright, the dual time source term for unsteady simulations is currently missing. All that LES/DES stuff from Eduardo. And prob a bit more. As mentioned already cross-referencing to meaningful tutorials and linking papers for further reading would be really cool and helpful -> "Hey this is feature X and here is more detailed information in a paper and there is a tutorial which contains this feature." 
+But all in all it is a pretty good start. In an ideal world one would have a seperate numerics section in the future that explains (or links to meaningful pages) further the FVM approach followed by SU2 and all the other good stuff ROE-scheme, gradient computation, boundary implementations etc.`
