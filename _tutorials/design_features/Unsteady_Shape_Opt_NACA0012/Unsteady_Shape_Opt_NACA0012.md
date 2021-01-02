@@ -47,7 +47,7 @@ the mesh file ([unsteady_naca0012_FFD.su2](https://github.com/su2code/Tutorials/
 The following tutorial will walk you through the steps required when performing a shape optimization of the  NACA0012 airfoil using SU2. 
 The tutorial will also address procedures for parallel computations.
 To this end, it is assumed you have already obtained and compiled SU2_CFD and its adjoint capabilities. 
-If you have yet to complete these requirements, please see the [Download](/docs_v7/Download/) and [Installation](/docs_v7/Installation/) pages.
+If you have yet to complete these requirements, please see the [Download](/su2/docs_v7/Download/) and [Installation](/su2/docs_v7/Installation/) pages.
 
 ### Background ###
 

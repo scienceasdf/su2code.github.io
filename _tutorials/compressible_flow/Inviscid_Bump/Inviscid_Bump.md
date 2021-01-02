@@ -32,7 +32,7 @@ and the config file [inv_channel.cfg](https://github.com/su2code/Tutorials/blob/
 
 ## Tutorial
 
-The following tutorial will walk you through the steps required when solving for the flow through the channel using SU2. It is assumed you have already obtained and compiled SU2_CFD. If you have yet to complete these requirements, please see the [Download](/docs_v7/Download/) and [Installation](/docs_v7/Installation/) pages.
+The following tutorial will walk you through the steps required when solving for the flow through the channel using SU2. It is assumed you have already obtained and compiled SU2_CFD. If you have yet to complete these requirements, please see the [Download](/su2/docs_v7/Download/) and [Installation](/su2/docs_v7/Installation/) pages.
 
 ## Background
 

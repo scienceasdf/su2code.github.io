@@ -16,7 +16,7 @@ follows:
 
 ## Goals
 
-This tutorial builds on the [laminar flat plate with heat transfer tutorial](/tutorials/Inc_Laminar_Flat_Plate/) where incompressible solver with solution of the energy equation is introduced.  
+This tutorial builds on the [laminar flat plate with heat transfer tutorial](/su2/Tutorials/Inc_Laminar_Flat_Plate/) where incompressible solver with solution of the energy equation is introduced.  
 The following capabilities of SU2 will be showcased in this tutorial:
 
 - Setting up a multiphysics simulation with Conjugate Heat Transfer (CHT) interfaces between zones
@@ -33,7 +33,7 @@ The resources for this tutorial can be found in the [incompressible_flow/Inc_Hea
 
 ## Tutorial
 
-The following tutorial will walk you through the steps required when solving for a coupled CHT solution incorporating multiple physical zones. It is assumed you have already obtained and compiled the SU2_CFD code for a serial computation. If you have yet to complete these requirements, please see the [Download](/docs_v7/Download/) and [Installation](/docs_v7/Installation/) pages.
+The following tutorial will walk you through the steps required when solving for a coupled CHT solution incorporating multiple physical zones. It is assumed you have already obtained and compiled the SU2_CFD code for a serial computation. If you have yet to complete these requirements, please see the [Download](/su2/docs_v7/Download/) and [Installation](/su2/docs_v7/Installation/) pages.
 
 ### Background
 
@@ -79,7 +79,7 @@ MARKER_CHT_INTERFACE= (cylinder_outer1, cylinder_inner1, cylinder_outer2, cylind
 
 By setting `MARKER_CHT_INTERFACE` for the outer diameters, temperature and heat flux data will be exchanged between the solvers at these boundaries in each outer iteration.  
 
-As in the [laminar flat plate with heat transfer tutorial](/tutorials/Inc_Laminar_Flat_Plate/), we activate the energy equation in the flow domain config ([flow_cylinder.cfg](https://github.com/su2code/Tutorials/tree/master/incompressible_flow/Inc_Heated_Cylinders/flow_cylinder.cfg)) but this time we allow for variable density as the heat input causes a non-neglectable influence on the density:
+As in the [laminar flat plate with heat transfer tutorial](/su2/Tutorials/Inc_Laminar_Flat_Plate/), we activate the energy equation in the flow domain config ([flow_cylinder.cfg](https://github.com/su2code/Tutorials/tree/master/incompressible_flow/Inc_Heated_Cylinders/flow_cylinder.cfg)) but this time we allow for variable density as the heat input causes a non-neglectable influence on the density:
 
 ```
 % ---------------- INCOMPRESSIBLE FLOW CONDITION DEFINITION -------------------%

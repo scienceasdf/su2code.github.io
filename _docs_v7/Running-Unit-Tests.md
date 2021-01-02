@@ -17,8 +17,8 @@ code.
 
 Unit tests are only supported with meson builds.  You must build from
 source to build the unit tests.  They are not part of the pre-compiled
-executables. For more information, see [Installation](/docs_v7/Installation.md),
-and [Build SU2 on Linux/MacOS](/docs_v7/Build-SU2-Linux-MacOS/).
+executables. For more information, see [Installation](/su2/docs_v7/Installation.md),
+and [Build SU2 on Linux/MacOS](/su2/docs_v7/Build-SU2-Linux-MacOS/).
 
 In order to compile the unit tests, add the flag `-Denable-tests=true`
 to your meson configure call. Then, you can build and run the tests by

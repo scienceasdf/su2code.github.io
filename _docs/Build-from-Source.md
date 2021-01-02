@@ -5,7 +5,7 @@ permalink: /docs/Build-from-Source/
 
 ## Source Install Overview
 
-This section provides details on the various tools and requirements when building the SU2 suite from the source code on Linux/Mac OS X systems. Please see the [Simple Build](/docs/Simple-Build/), [Parallel Build](/docs/Parallel-Build/) or [AD Build](/docs/AD-Build/) pages for concise directions on the install process.
+This section provides details on the various tools and requirements when building the SU2 suite from the source code on Linux/Mac OS X systems. Please see the [Simple Build](/su2/docs/Simple-Build/), [Parallel Build](/su2/docs/Parallel-Build/) or [AD Build](/su2/docs/AD-Build/) pages for concise directions on the install process.
 
 ### GNU Autoconf / Automake Tools
 

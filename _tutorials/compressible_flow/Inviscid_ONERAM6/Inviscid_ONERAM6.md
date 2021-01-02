@@ -33,7 +33,7 @@ The resources for this tutorial can be found in the [compressible_flow/Inviscid_
 
 ## Tutorial
 
-The following tutorial will walk you through the steps required when solving for external flow past the ONERA M6 using SU2. The tutorial will also address procedures for both serial and parallel computations. It is assumed that you have already obtained and compiled the SU2_CFD code for a serial computation or both the SU2_CFD and SU2_SOL codes for a parallel computation. If you have yet to complete these requirements, please see the [Download](/docs_v7/Download/) and [Installation](/docs_v7/Installation/) pages.
+The following tutorial will walk you through the steps required when solving for external flow past the ONERA M6 using SU2. The tutorial will also address procedures for both serial and parallel computations. It is assumed that you have already obtained and compiled the SU2_CFD code for a serial computation or both the SU2_CFD and SU2_SOL codes for a parallel computation. If you have yet to complete these requirements, please see the [Download](/su2/docs_v7/Download/) and [Installation](/su2/docs_v7/Installation/) pages.
 
 ### Background
 

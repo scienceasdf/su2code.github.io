@@ -30,11 +30,11 @@ The resources for this tutorial can be found in the [design/Multi_Objective_Shap
 
 ## Tutorial
 
-The following tutorial will walk you through the steps required when running a multi-objective optimization problem with SU2. It is assumed you have already obtained or compiled the SU2 executables and python shape optimization scripts. If you have yet to complete these requirements, please see the [Download](/docs_v7/Download/) and [Installation](/docs_v7/Installation/) pages.
+The following tutorial will walk you through the steps required when running a multi-objective optimization problem with SU2. It is assumed you have already obtained or compiled the SU2 executables and python shape optimization scripts. If you have yet to complete these requirements, please see the [Download](/su2/docs_v7/Download/) and [Installation](/su2/docs_v7/Installation/) pages.
 
 ## Background
 ### Flow Conditions and Mesh Description
-The description of the mesh and boundary conditions can be found in the [inviscid supersonic wedge tutorial](/tutorials/Inviscid_Wedge).
+The description of the mesh and boundary conditions can be found in the [inviscid supersonic wedge tutorial](/su2/Tutorials/Inviscid_Wedge).
 
 ### Configuration File Options
 The configuration file options specifying the boundary conditions
@@ -71,7 +71,7 @@ OBJECTIVE_WEIGHT= -1.0E-7,1.0
 ```
 These options define a weighted sum: -1.0E-7 x (SURFACE_TOTAL_PRESSURE at the outlet) + (DRAG on the lower surface). The OBJECTIVE_FUNCTION and OBJECTIVE_WEIGHT options are set automatically during the optimization process, and are used for the calculation of the gradient. If we were starting this problem from scratch, at this point we would run the gradient method desired, in order to confirm that the gradients are being calculated as expected. In this tutorial, the discrete adjoint is used by default. When multiple objectives are specified as shown, a single adjoint solution for a 'combo' objective will be calculated, representing the gradient for the weighted sum. The upside of this is that it reduces the number of adjoint solutions required, with the downside that the contributions of different functionals to the gradient value will not be known.
 
-Next the FFD box is defined in order to provide the design variables. The mesh is provided with the FFD box information already included, however when starting from scratch a preprocessing step using SU2_MSH is required. For further detail on FFD, see the [Constrainted Optimal Shape Design Tutorial](/tutorials/Inviscid_3D_Constrained_ONERAM6/).
+Next the FFD box is defined in order to provide the design variables. The mesh is provided with the FFD box information already included, however when starting from scratch a preprocessing step using SU2_MSH is required. For further detail on FFD, see the [Constrainted Optimal Shape Design Tutorial](/su2/Tutorials/Inviscid_3D_Constrained_ONERAM6/).
 ```
 % -------------------- FREE-FORM DEFORMATION PARAMETERS -----------------------%
 %

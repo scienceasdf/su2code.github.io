@@ -5,8 +5,8 @@ permalink: /docs_v7/Writing-Unit-Tests/
 
 This document covers the question "How do I write unit tests for SU2?"
 Before reading this page, make sure you are familiar with the pages
-[Running Unit Tests](/docs_v7/Running-Unit-Tests/) and 
-[Build SU2 on Linux/MacOS](/docs_v7/Build-SU2-Linux-MacOS/).
+[Running Unit Tests](/su2/docs_v7/Running-Unit-Tests/) and 
+[Build SU2 on Linux/MacOS](/su2/docs_v7/Build-SU2-Linux-MacOS/).
 
 This document is intended to be an introduction only. There are plenty of
 details that are *not* covered in this document.  This omission is

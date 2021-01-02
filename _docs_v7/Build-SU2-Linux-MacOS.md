@@ -4,7 +4,7 @@ permalink: /docs_v7/Build-SU2-Linux-MacOS/
 redirect_from: /docs/Build-SU2-From-Source/
 ---
 
-For information on how to build older versions of SU2, have a look [here](/docs/Build-from-Source/).
+For information on how to build older versions of SU2, have a look [here](/su2/docs/Build-from-Source/).
 
 Note that the following guide works only on Linux/MacOS and on Windows using Cygwin or the [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
@@ -195,7 +195,7 @@ where `build` is again a folder with a configuration created using a call to `me
 
 
 ### Setting environment variables ###
-Set the environment variables to use the executables from any directory without explicity specifying the path as described in the [installation section](/docs_v7/SU2-Linux-MacOS).
+Set the environment variables to use the executables from any directory without explicity specifying the path as described in the [installation section](/su2/docs_v7/SU2-Linux-MacOS).
 
 ---
 

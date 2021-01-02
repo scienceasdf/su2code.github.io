@@ -3,7 +3,7 @@ title: Python Wrapper Build
 permalink: /docs/Python-Wrapper-Build/
 ---
 
-It is recommended to read the information at [Build from Source](/docs/Build-from-Source/) first prior reading this section.
+It is recommended to read the information at [Build from Source](/su2/docs/Build-from-Source/) first prior reading this section.
 
 In order to use the Python Wrapper of SU2, an additional compilation step is required. The wrapper is based on the CDriver structure of SU2 and the compilation is performed with [Swig](http://www.swig.org/) that is required to be installed on your system. For a parallel build, Python bindings for MPI are also required. We recommend to use [mpi4py](https://pythonhosted.org/mpi4py/usrman/). You will find a few notes that will help you install the required packages at the end of this tutorial.
 

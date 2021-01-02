@@ -21,7 +21,7 @@ With v7.0 we have introduced a lot of updates and changes that affect how you in
 
 ### Definition of the physical problem and solver ###
 
-The option `PHYSICAL_PROBLEM` has been renamed to `SOLVER`. The rational behind this change is that we are going to have several different solvers in the future which essentially solve the same physical problems. You can find a list of current solvers in the new [Solver Setup](/docs_v7/Solver-Setup) section.
+The option `PHYSICAL_PROBLEM` has been renamed to `SOLVER`. The rational behind this change is that we are going to have several different solvers in the future which essentially solve the same physical problems. You can find a list of current solvers in the new [Solver Setup](/su2/docs_v7/Solver-Setup) section.
 
 ### Definition of the incompressible solver ###
 
@@ -29,7 +29,7 @@ The option `REGIME_TYPE` has been removed. In line with the change above, the in
 
 ### Controlling the solver ###
 
-We have made the control of the different solvers more consistent. In particular setting the number of iterations. The option `EXT_ITER` has been removed and is replaced depending on the definition of the problem. Options for defining a time-dependent problem also changed. More details can be found in the table below and in section [Solver Setup](/docs_v7/Solver-Setup).
+We have made the control of the different solvers more consistent. In particular setting the number of iterations. The option `EXT_ITER` has been removed and is replaced depending on the definition of the problem. Options for defining a time-dependent problem also changed. More details can be found in the table below and in section [Solver Setup](/su2/docs_v7/Solver-Setup).
 
 | Old option name | New option name | Note
 | --- | --- | --- |
@@ -51,7 +51,7 @@ A lot of effort has been put into making the output more customizable. Below you
 | `SURFACE_FLOW_FILENAME` | `SURFACE_FILENAME` | - |
 | `VOLUME_FLOW_FILENAME` | `VOLUME_FILENAME` | - |
 | `OUTPUT_FORMAT` | `TABULAR_FORMAT` | This option now defines **only** the format of tabular outputs like the history files (values are `CSV`, `TECPLOT`) |
-| - | `OUTPUT_FILES` | Replaces the options `WRT_VOL_SOL`, `WRT_SRF_SOL`, `WRT_CSV_SOL`, `WRT_BINARY_RESTART`, by specifying a list of files to output (see [Custom Output](/docs_v7/Custom-Output))|
+| - | `OUTPUT_FILES` | Replaces the options `WRT_VOL_SOL`, `WRT_SRF_SOL`, `WRT_CSV_SOL`, `WRT_BINARY_RESTART`, by specifying a list of files to output (see [Custom Output](/su2/docs_v7/Custom-Output))|
 | `WRT_SOL_FREQ_DUALTIME`,  `WRT_SOL_FREQ` |  `OUTPUT_WRT_FREQ` | - |
 | `WRT_CON_FREQ_DUALTIME`,  `WRT_CON_FREQ` |  `SCREEN_WRT_FREQ_INNER`, `SCREEN_WRT_FREQ_OUTER`, `SCREEN_WRT_FREQ_TIME` | Same options exist for history output (by replacing `SCREEN_*` with `HISTORY_*`) |
 | `WRT_OUTPUT`|  - | Removed. Equivalent behavior can be achieved by setting `OUTPUT_FILES` to `NONE` |
@@ -86,7 +86,7 @@ Below are the options that have changed or are removed:
 | `RESIDUAL_MINVAL` | `CONV_RESIDUAL_MINVAL` | - |
 | `CAUCHY_ELEMS` | `CONV_CAUCHY_ELEMS` | - |
 | `CAUCHY_EPS` | `CONV_CAUCHY_EPS` | - |
-| `CONV_CRITERIA` | `CONV_FIELD` | Accepts all fields available as output for the current solver (see [Solver Setup](/docs_v7/Solver-Setup#setting-convergence-critera))|
+| `CONV_CRITERIA` | `CONV_FIELD` | Accepts all fields available as output for the current solver (see [Solver Setup](/su2/docs_v7/Solver-Setup#setting-convergence-critera))|
 | `RESIDUAL_REDUCTION` | - | Removed. Equivalent behavior can be achieved by choosing a relative residual field for `CONV_FIELD` and setting `CONV_RESIDUAL_MINVAL` appropriately. 
 
 

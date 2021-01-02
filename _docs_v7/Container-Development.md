@@ -59,7 +59,7 @@ A typical call where the current directory on the host is mounted and used as wo
 ```
 docker run -ti --rm -v $PWD:/workdir/  -w /workdir --entrypoint bash su2code/build-su2
 ```
-Here, we also override the entrypoint in order to execute a bash shell. Note, that all changes you make will be lost after you exit the container (except from changes in the working directory). Once in the bash you can simply use an existing or new clone of the repository to compile SU2 [the usual way](/docs_v7/Build-SU2-Linux-MacOS/).
+Here, we also override the entrypoint in order to execute a bash shell. Note, that all changes you make will be lost after you exit the container (except from changes in the working directory). Once in the bash you can simply use an existing or new clone of the repository to compile SU2 [the usual way](/su2/docs_v7/Build-SU2-Linux-MacOS/).
 
 
 ## Using the scripts to compile SU2 ##

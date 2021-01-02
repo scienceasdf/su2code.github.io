@@ -19,9 +19,9 @@ We will continue to add cases over time to demonstrate V&V of additional physica
 
 #### Compressible Flow
 
-* [Method of Manufactured Solutions for Compressible Navier-Stokes](/vandv/MMS_FVM_Navier_Stokes/)
+* [Method of Manufactured Solutions for Compressible Navier-Stokes](/su2/vandv/MMS_FVM_Navier_Stokes/)
 Formal order of accuracy of the finite volume solver in SU2 for the laminar Navier-Stokes equations is assessed.
-* [2D Zero Pressure Gradient Flat Plate RANS Verification Case](/vandv/Flat_Plate/)
+* [2D Zero Pressure Gradient Flat Plate RANS Verification Case](/su2/vandv/Flat_Plate/)
 Code-to-code comparisons of drag and skin friction on a turbulent flat plate is presented using data from the NASA Turbulence Modeling Resource.
-* [2D Bump-in-Channel RANS Verification Case](/vandv/Bump_Channel/)
+* [2D Bump-in-Channel RANS Verification Case](/su2/vandv/Bump_Channel/)
 Code-to-code comparisons for a bump in a channel, which results in pressure gradients, is presented using data from the NASA Turbulence Modeling Resource.

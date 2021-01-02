@@ -5,7 +5,7 @@ permalink: /docs_v7/Test-Cases/
 
 If you would like to experiment with some available cases, be sure to check out the suite of test cases that are available to you, as described below.
 
-**Note:** While many of the cases are used for regression testing, the test case suite is provided **without any guarantees on performance or expected results**. Tutorials (which are more thoroughly checked for convergence and results) can be found [here](/tutorials/home/).
+**Note:** While many of the cases are used for regression testing, the test case suite is provided **without any guarantees on performance or expected results**. Tutorials (which are more thoroughly checked for convergence and results) can be found [here](/su2/Tutorials/home/).
 
 The test cases have been structured to separate the config files (found in the SU2 repo in SU2/TestCases/), which need to remain under version control, from the mesh/solution data (remain in a separate TestCases repo). The idea is that developers will update their config files along with their code changes in the SU2 repo so that pull requests can be automatically checked with Travis CI. The meshes and solution data, which change much less frequently and are larger files, remain in the TestCases repo.
 

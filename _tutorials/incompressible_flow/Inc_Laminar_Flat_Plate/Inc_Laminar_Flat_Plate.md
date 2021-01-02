@@ -16,7 +16,7 @@ follows:
 
 ## Goals
 
-Upon completing this tutorial, the user will be familiar with performing a simulation of external, laminar, incompressible flow over a flat plate. We repeat the [compressible laminar flate plate tutorial](/tutorials/Laminar_Flat_Plate/) with the addition of heat transfer on the plate. Consequently, the following capabilities of SU2 will be showcased in this tutorial:
+Upon completing this tutorial, the user will be familiar with performing a simulation of external, laminar, incompressible flow over a flat plate. We repeat the [compressible laminar flate plate tutorial](/su2/Tutorials/Laminar_Flat_Plate/) with the addition of heat transfer on the plate. Consequently, the following capabilities of SU2 will be showcased in this tutorial:
 
 - Steady, 2D, laminar, incompressible, Navier-Stokes equations 
 - Multigrid
@@ -33,11 +33,11 @@ The resources for this tutorial can be found in the [incompressible_flow/Inc_Lam
 
 ## Tutorial
 
-The following tutorial will walk you through the steps required when solving for the flow over a flat plate using the incompressible solver in SU2. It is assumed you have already obtained and compiled the SU2_CFD code for a serial computation. If you have yet to complete these requirements, please see the [Download](/docs_v7/Download/) and [Installation](/docs_v7/Installation/) pages.
+The following tutorial will walk you through the steps required when solving for the flow over a flat plate using the incompressible solver in SU2. It is assumed you have already obtained and compiled the SU2_CFD code for a serial computation. If you have yet to complete these requirements, please see the [Download](/su2/docs_v7/Download/) and [Installation](/su2/docs_v7/Installation/) pages.
 
 ### Background
 
-We will reuse the Blasius solution from the [compressible flat plate tutorial](/tutorials/Laminar_Flat_Plate/) as a verification of the incompressible solver. However, in addition to comparing the velocity profile and skin friction coefficient against the analytic solutions, we will also compare the local Nusselt number along the plate. Expressions for the skin friciton coefficient and local Nusslet number can be derived:
+We will reuse the Blasius solution from the [compressible flat plate tutorial](/su2/Tutorials/Laminar_Flat_Plate/) as a verification of the incompressible solver. However, in addition to comparing the velocity profile and skin friction coefficient against the analytic solutions, we will also compare the local Nusselt number along the plate. Expressions for the skin friciton coefficient and local Nusslet number can be derived:
 
 ![Blasius Cf](../../tutorials_files/incompressible_flow/Inc_Laminar_Flat_Plate/images/blasius_eqn.png)
 

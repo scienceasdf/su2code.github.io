@@ -83,7 +83,7 @@ For all schemes, as reference values for the density and temperature the free-st
 | --- | --- |
 | `INC_EULER`, `INC_NAVIER_STOKES`, `INC_RANS` | 7.0.0 |
 
-The physical definition of the incompressible solvers is accomplished by setting an appropriate flow condition for initialization and non-dimensionalization. SU2 solves the [incompressible Navier-Stokes equations](/docs_v7/Theory/#incompressible-navier-stokes) in a general form allowing for variable density due to heat transfer through the low-Mach approximation (or incompressible ideal gas formulation). 
+The physical definition of the incompressible solvers is accomplished by setting an appropriate flow condition for initialization and non-dimensionalization. SU2 solves the [incompressible Navier-Stokes equations](/su2/docs_v7/Theory/#incompressible-navier-stokes) in a general form allowing for variable density due to heat transfer through the low-Mach approximation (or incompressible ideal gas formulation). 
 
 ### Thermodynamic and Gauge Pressure ###
 

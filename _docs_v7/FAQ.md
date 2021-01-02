@@ -8,7 +8,7 @@ permalink: /docs_v7/FAQ/
 If the answer to your question is not here, try the [forum](http://cfd-online.com/Forums/su2/).
 
 ### I am new to CFD and I don't know where to start. Can you help me?
-The best place to start for a new user after installing the code is the [Quick Start](/docs_v7/Quick-Start/) tutorial. 
+The best place to start for a new user after installing the code is the [Quick Start](/su2/docs_v7/Quick-Start/) tutorial. 
 
 ### Where is the documentation?
 The most easy-to-use documentation is here on GitHub, and you just found it! Users are especially encouraged to go through the docs in the Installation and Users Guide sections for all of the necesary details for running your first calculations.
@@ -53,4 +53,4 @@ A nonphysical point means the flow solution has encountered a negative density, 
 
 
 ### Where can I get the suite of test cases for SU2?
-The test case config files are found in the SU2 code repo, while the meshes are located in a separate repository under the SU2 organization. We recommend copying the meshes into place within the SU2 source directory where the config files reside (under version control). See [this page](/docs_v7/Test-Cases/) for directions.
+The test case config files are found in the SU2 code repo, while the meshes are located in a separate repository under the SU2 organization. We recommend copying the meshes into place within the SU2 source directory where the config files reside (under version control). See [this page](/su2/docs_v7/Test-Cases/) for directions.

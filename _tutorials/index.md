@@ -19,76 +19,76 @@ The tutorials are numbered roughly in order of their complexity and how experien
 
 You can get all the mesh and config files either by cloning or downloading the [tutorial repository](https://github.com/su2code/Tutorials) or by downloading them separately using the provided links on each tutorial page.
 
-**Note:** Before beginning with the tutorials, please make sure to check out the information on how to [download](/docs_v7/Download/) and [install](/docs_v7/Installation/).
+**Note:** Before beginning with the tutorials, please make sure to check out the information on how to [download](/su2/docs_v7/Download/) and [install](/su2/docs_v7/Installation/).
 
 ## Summary of tutorials
 ------
 
 #### Compressible Flow
 
-* [Inviscid Bump in a Channel](/tutorials/Inviscid_Bump/)   
+* [Inviscid Bump in a Channel](/su2/Tutorials/Inviscid_Bump/)   
 A simulation of internal, inviscid flow through a 2D geometry.
-* [Inviscid Supersonic Wedge](/tutorials/Inviscid_Wedge/)    
+* [Inviscid Supersonic Wedge](/su2/Tutorials/Inviscid_Wedge/)    
 Get familiar with a basic supersonic flows with analytical solution.
-* [Inviscid ONERAM6](/tutorials/Inviscid_ONERAM6/)    
+* [Inviscid ONERAM6](/su2/Tutorials/Inviscid_ONERAM6/)    
 Simulation of external, inviscid flow around a 3D geometry (isolated wing).
-* [Laminar Flat Plate](/tutorials/Laminar_Flat_Plate/)   
+* [Laminar Flat Plate](/su2/Tutorials/Laminar_Flat_Plate/)   
 Simulation of external, laminar flow over a flat plate (classical Navier-Stokes validation).
-* [Laminar Cylinder](/tutorials/Laminar_Cylinder/)    
+* [Laminar Cylinder](/su2/Tutorials/Laminar_Cylinder/)    
 Simulation of external, laminar flow around a 2D cylinder.
-* [Turbulent Flat Plate](/tutorials/Turbulent_Flat_Plate/)    
+* [Turbulent Flat Plate](/su2/Tutorials/Turbulent_Flat_Plate/)    
 Simulation of external, turbulent flow over a flat plate (classical RANS validation).
-* [Transitional Flat Plate](/tutorials/Transitional_Flat_Plate/)    
+* [Transitional Flat Plate](/su2/Tutorials/Transitional_Flat_Plate/)    
 Simulation of external, transitional flow over a flat plate (transitional latminar-turbulent case).
-* [Turbulent ONERAM6](/tutorials/Turbulent_ONERAM6/)     
+* [Turbulent ONERAM6](/su2/Tutorials/Turbulent_ONERAM6/)     
 Simulation of external, viscous flow around a 3D geometry (isolated wing) using a turbulence model.
-* [Unsteady NACA0012](/tutorials/Unsteady_NACA0012/)     
+* [Unsteady NACA0012](/su2/Tutorials/Unsteady_NACA0012/)     
 Simulation of unsteady, external, viscous flow around an airfoil.
-* [Epistemic Uncertainty Quantification of RANS predictions of NACA 0012 airfoil](/tutorials/UQ_NACA0012/)    
+* [Epistemic Uncertainty Quantification of RANS predictions of NACA 0012 airfoil](/su2/Tutorials/UQ_NACA0012/)    
 Perform uncertainty quantification of errors arising due to assumptions inherent in turbulence models.
-* [Non-ideal compressible flow in a supersonic nozzle](/tutorials/NICFD_nozzle/)    
+* [Non-ideal compressible flow in a supersonic nozzle](/su2/Tutorials/NICFD_nozzle/)    
 Simulation of compressible flow in a nozzle using non-ideal thermodynamic models.
 
 #### Incompressible Flow
 
-* [Inviscid Hydrofoil](/tutorials/Inc_Inviscid_Hydrofoil/)   
+* [Inviscid Hydrofoil](/su2/Tutorials/Inc_Inviscid_Hydrofoil/)   
 A simulation of internal, inviscid, incompressible flow around a NACA 0012 hydrofoil.
-* [Laminar Flat Plate with Heat Transfer](/tutorials/Inc_Laminar_Flat_Plate/)    
+* [Laminar Flat Plate with Heat Transfer](/su2/Tutorials/Inc_Laminar_Flat_Plate/)    
 Simulation of external, laminar, incompressible flow over a flat plate (classical Navier-Stokes case).
-* [Turbulent Flat Plate](/tutorials/Inc_Turbulent_Flat_Plate/)    
+* [Turbulent Flat Plate](/su2/Tutorials/Inc_Turbulent_Flat_Plate/)    
 Simulation of external, turbulentm incompressible flow over a flat plate (classical RANS case).
-* [Turbulent NACA 0012](/tutorials/Inc_Turbulent_NACA0012/)    
+* [Turbulent NACA 0012](/su2/Tutorials/Inc_Turbulent_NACA0012/)    
 Simulation of external, viscous, incompressible flow around the NACA 0012 using a turbulence model.
-* [Laminar Backward-facing Step](/tutorials/Inc_Laminar_Step/)    
+* [Laminar Backward-facing Step](/su2/Tutorials/Inc_Laminar_Step/)    
 Simulation of internal, laminar, incompressible flow over a backward-facing step with an inlet velocity profile input from file.
-* [Laminar Buoyancy-driven Cavity](/tutorials/Inc_Laminar_Cavity/)    
+* [Laminar Buoyancy-driven Cavity](/su2/Tutorials/Inc_Laminar_Cavity/)    
 Simulation of internal, laminar, incompressible flow in a differentially-heated cavity under the influence of gravity (classical natural convection case).
-* [Heated Cylinders with Conjugate Heat Transfer](/tutorials/Inc_Heated_Cylinders/)     
+* [Heated Cylinders with Conjugate Heat Transfer](/su2/Tutorials/Inc_Heated_Cylinders/)     
 Simulation of a coupled CHT problem incorporating multiple physical zones.
 
 #### Structural Mechanics
-* [Linear Elasticity](/tutorials/Linear_Elasticity/)  
+* [Linear Elasticity](/su2/Tutorials/Linear_Elasticity/)  
 Simulation of an elasticity problem with small deformations
-* [Linear Dynamics](/tutorials/Linear_Dynamics/)  
+* [Linear Dynamics](/su2/Tutorials/Linear_Dynamics/)  
 Simulation of a dynamic structural problem with small deformations
-* [Non-linear Elasticity](/tutorials/Nonlinear_Elasticity/)  
+* [Non-linear Elasticity](/su2/Tutorials/Nonlinear_Elasticity/)  
 Simulation of a non-linear structural problem with large deformations
-* [Multiple Materials](/tutorials/Multiple_Material/)  
+* [Multiple Materials](/su2/Tutorials/Multiple_Material/)  
 Simulation of a non-linear problem with multiple material definitions
 
 #### Multiphysics
-* [Static Fluid-Structure Interaction](/tutorials/Static_FSI/)  
+* [Static Fluid-Structure Interaction](/su2/Tutorials/Static_FSI/)  
 Non-linear structural mechanics coupled with incompressible Navier-Stokes flow
 
 #### Shape Design Features
 
-* [Unconstrained shape design of an transonic inviscid airfoil at a cte. AoA](/tutorials/Inviscid_2D_Unconstrained_NACA0012/)
+* [Unconstrained shape design of an transonic inviscid airfoil at a cte. AoA](/su2/Tutorials/Inviscid_2D_Unconstrained_NACA0012/)
 Get a basic introduction to the SU2 design capabilities by performing an optimal shape design of a 2D geometry (isolated airfoil) without constraints.
-* [Constrained shape design of a transonic turbulent airfoil at a cte. C<sub>L</sub>](/tutorials/Turbulent_2D_Constrained_RAE2822/)    
+* [Constrained shape design of a transonic turbulent airfoil at a cte. C<sub>L</sub>](/su2/Tutorials/Turbulent_2D_Constrained_RAE2822/)    
 Perform an optimal shape design of a 2D geometry (isolated airfoil at turbulent regime) with flow and geometrical constraints.
-* [Constrained shape design of a transonic inviscid wing at a cte. C<sub>L</sub>](/tutorials/Inviscid_3D_Constrained_ONERAM6/)    
+* [Constrained shape design of a transonic inviscid wing at a cte. C<sub>L</sub>](/su2/Tutorials/Inviscid_3D_Constrained_ONERAM6/)    
 Learn the basis of 3D design by performing an optimal shape design of an isolated wing with geometrical constraints.
-* [Multi-Objective Shape Design of an Inviscid Supersonic Ramp](/tutorials/Multi_Objective_Shape_Design/)    
+* [Multi-Objective Shape Design of an Inviscid Supersonic Ramp](/su2/Tutorials/Multi_Objective_Shape_Design/)    
  Perform an optimal shape design with multiple objectives and a penalty function
-* [Unsteady Shape Optimization](/tutorials/Unsteady_Shape_Opt_NACA0012/)  
+* [Unsteady Shape Optimization](/su2/Tutorials/Unsteady_Shape_Opt_NACA0012/)  
  Shape optimization of an 2D airfoil in unsteady flow conditions.

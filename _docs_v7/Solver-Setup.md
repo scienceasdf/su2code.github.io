@@ -3,7 +3,7 @@ title: Solver Setup
 permalink: /docs_v7/Solver-Setup/
 ---
 
-This is a basic introduction on how to set up a simulation using SU2. We distinguish between single-zone computations and multi-zone computations. The following considers a single zone only. For an explanation on multi-zone problems, continue with [Basics of Multi-Zone Computations](/docs_v7/Multizone).
+This is a basic introduction on how to set up a simulation using SU2. We distinguish between single-zone computations and multi-zone computations. The following considers a single zone only. For an explanation on multi-zone problems, continue with [Basics of Multi-Zone Computations](/su2/docs_v7/Multizone).
 
 ---
 
@@ -65,7 +65,7 @@ RESTART_ITER= 0
 ```
 
 <!-- ## Direct and Adjoint ##
-The option `MATH_PROBLEM` defines whether the direct problem (`DIRECT`, default) or the adjoint problem should be solved. For the latter you have the choice between the continuous adjoint solver (`CONTINUOUS_ADJOINT`) or the discrete adjoint solver (`DISCRETE_ADJOINT`). Note that the discrete adjoint solver requires the `*_AD` binaries (i.e. SU2 must be [compiled](/docs_v7/Build-SU2-From-Source) with the `-Denable-autodiff=true` flag). Not all problems have a corresponding adjoint solver (yet). See below for a compatibility list:
+The option `MATH_PROBLEM` defines whether the direct problem (`DIRECT`, default) or the adjoint problem should be solved. For the latter you have the choice between the continuous adjoint solver (`CONTINUOUS_ADJOINT`) or the discrete adjoint solver (`DISCRETE_ADJOINT`). Note that the discrete adjoint solver requires the `*_AD` binaries (i.e. SU2 must be [compiled](/su2/docs_v7/Build-SU2-From-Source) with the `-Denable-autodiff=true` flag). Not all problems have a corresponding adjoint solver (yet). See below for a compatibility list:
 
 | `SOLVER` | Discrete Adjoint Solver available | Continuous Adjoint Solver available |
 | --- | --- | --- |
@@ -140,7 +140,7 @@ A steady-state simulation is defined by using `TIME_DOMAIN=NO`, which is the def
 | --- | --- |
 | `ALL`| 7.0.0 |
 
-Despite setting the maximum number of iterations, it is possible to use a convergence criterion so that the solver will stop when it reaches a certain value of a residual or if variations of a coefficient are below a certain threshold. To enable a convergence criterion use the option `CONV_FIELD` to set an output field that should be monitored. The list of possible fields depends on the solver. Take a look at [Custom Output](/docs_v7/Custom-Output/) to learn more about output fields. Depending on the type of field (residual or coefficient) there are two types of methods:
+Despite setting the maximum number of iterations, it is possible to use a convergence criterion so that the solver will stop when it reaches a certain value of a residual or if variations of a coefficient are below a certain threshold. To enable a convergence criterion use the option `CONV_FIELD` to set an output field that should be monitored. The list of possible fields depends on the solver. Take a look at [Custom Output](/su2/docs_v7/Custom-Output/) to learn more about output fields. Depending on the type of field (residual or coefficient) there are two types of methods:
 
 ### Steady-state Residual ###
 If the field set with `CONV_FIELD` is a residual, the solver will stop if it is smaller than the value set with 
@@ -158,7 +158,7 @@ CONV_RESIDUAL_MINVAL= -8
 ```
 
 ### Steady-state Coefficient ###
-If the field set with `CONV_FIELD` is a coefficient, a Cauchy series approach is applied. A Cauchy element is defined as the relative difference of the coefficient between two consecutive iterations. The solver will stop if the average over a certain number of elements (set with `CONV_CAUCHY_ELEMS`) is smaller than the value set with `CONV_CAUCHY_EPS`. The current value of the Cauchy coefficient can be written to screen or history by adding the `CAUCHY` field to the `SCREEN_OUTPUT` or `HISTORY_OUTPUT` option (see [Custom Output](/docs_v7/Custom-Output/)). Example:
+If the field set with `CONV_FIELD` is a coefficient, a Cauchy series approach is applied. A Cauchy element is defined as the relative difference of the coefficient between two consecutive iterations. The solver will stop if the average over a certain number of elements (set with `CONV_CAUCHY_ELEMS`) is smaller than the value set with `CONV_CAUCHY_EPS`. The current value of the Cauchy coefficient can be written to screen or history by adding the `CAUCHY` field to the `SCREEN_OUTPUT` or `HISTORY_OUTPUT` option (see [Custom Output](/su2/docs_v7/Custom-Output/)). Example:
 
 ```
 % ------------------ Coefficient-based Convergence Criteria -----------------------%
@@ -177,13 +177,13 @@ For both methods the option `CONV_STARTITER` defines when the solver should star
 
 ### Time-dependent Coefficient ###
 In a time-dependend simulation we have two iterators, `INNER_ITER` and `TIME_ITER`. The convergence criterion for the `INNER_ITER` loop is the same as in the steady-state case. 
-For the `TIME_ITER`, there are convergence options implemented for the case of a periodic flow. The convergence criterion uses the so-called windowing approach, (see [Custom Output](/docs_v7/Custom-Output/)). The convergence options are applicable  only for coefficients.
+For the `TIME_ITER`, there are convergence options implemented for the case of a periodic flow. The convergence criterion uses the so-called windowing approach, (see [Custom Output](/su2/docs_v7/Custom-Output/)). The convergence options are applicable  only for coefficients.
 To enable time convergence, set `WINDOW_CAUCHY_CRIT=YES` (default is `NO`). The option `CONV_WINDOW_FIELD` determines the output-fields to be monitored. 
 Typically, one is interested in monitoring time-averaged coefficients, e.g `TAVG_DRAG`.
  Analogously to the steady state case, 
 the solver will stop, if the average over a certain number of elements (set with `CONV_WINDOW_CAUCHY_ELEMS`) is smaller than the value set with `CONV_WINDOW_CAUCHY_EPS`.
-The current value of the Cauchy coefficient can be written to screen or history using the flag `CAUCHY` (see [Custom Output](/docs_v7/Custom-Output/)).
-The option `CONV_WINDOW_STARTITER` determines the numer of iterations, the solver should wait to start moniotring, after `WINDOW_START_ITER` has passed. `WINDOW_START_ITER` determines the iteration, when the (time dependent) outputs are averaged, (see [Custom Output](/docs_v7/Custom-Output/)).
+The current value of the Cauchy coefficient can be written to screen or history using the flag `CAUCHY` (see [Custom Output](/su2/docs_v7/Custom-Output/)).
+The option `CONV_WINDOW_STARTITER` determines the numer of iterations, the solver should wait to start moniotring, after `WINDOW_START_ITER` has passed. `WINDOW_START_ITER` determines the iteration, when the (time dependent) outputs are averaged, (see [Custom Output](/su2/docs_v7/Custom-Output/)).
 The window-weight-function used is determined by the option `WINDOW_FUNCTION`
 
 ```

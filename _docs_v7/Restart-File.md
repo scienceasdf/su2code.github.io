@@ -3,7 +3,7 @@ title: Restart File
 permalink: /docs_v7/Restart-File/
 ---
 
-The SU2 binary restart format has the extension `.dat`, but it is also possible to write out restart files in a simple ASCII file format with extension `.csv`. Have a look at the [Output section](/docs_v7/Custom-Output/) to learn how to change output file formats.
+The SU2 binary restart format has the extension `.dat`, but it is also possible to write out restart files in a simple ASCII file format with extension `.csv`. Have a look at the [Output section](/su2/docs_v7/Custom-Output/) to learn how to change output file formats.
 
 The restart files are used to restart the code from a previous solution and also to run the adjoint simulations, which require a flow solution as input. In order to run an adjoint simulation, the user must first change the name of the `restart_flow.dat`  file (or `restart_flow.csv` if ASCII format) to `solution_flow.dat` (or `solution_flow.csv`) in the execution directory (these default file names can be adjusted in the config file). It is important to note that the adjoint solver will create a different adjoint restart file for each objective function, e.g. `restart_adj_cd.dat`.
 

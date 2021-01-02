@@ -34,5 +34,5 @@ As the well-known, freely-available, open-source implementations of MPI listed i
 
 ## Running SU2 in Windows
 
-Running SU2 in Windows is identical to running in [Linux or Mac OS environments](/docs_v7/Execution/) and is run from the command line (whether cmd.exe or the freely-available Console2 for Windows). If your executable path contains white space you may need to add ".exe". Note, however, that you may need to use `mpiexec` instead of `mpirun`. 
+Running SU2 in Windows is identical to running in [Linux or Mac OS environments](/su2/docs_v7/Execution/) and is run from the command line (whether cmd.exe or the freely-available Console2 for Windows). If your executable path contains white space you may need to add ".exe". Note, however, that you may need to use `mpiexec` instead of `mpirun`. 
 

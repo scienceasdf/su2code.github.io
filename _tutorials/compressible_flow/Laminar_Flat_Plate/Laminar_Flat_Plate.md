@@ -35,7 +35,7 @@ The resources for this tutorial can be found in the [compressible_flow/Laminar_F
 
 ## Tutorial
 
-The following tutorial will walk you through the steps required when solving for the flow over a flat plate using SU2. It is assumed you have already obtained and compiled the SU2_CFD code for a serial computation. If you have yet to complete these requirements, please see the [Download](/docs_v7/Download/) and [Installation](/docs_v7/Installation/) pages.
+The following tutorial will walk you through the steps required when solving for the flow over a flat plate using SU2. It is assumed you have already obtained and compiled the SU2_CFD code for a serial computation. If you have yet to complete these requirements, please see the [Download](/su2/docs_v7/Download/) and [Installation](/su2/docs_v7/Installation/) pages.
 
 ### Background
 

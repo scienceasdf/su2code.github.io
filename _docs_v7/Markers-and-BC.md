@@ -91,7 +91,7 @@ MARKER_ISOTHERMAL = (Wall1, 300.0, Wall2, 250.0)
 | --- | --- |
 | `EULER`, `NAVIER_STOKES`, `RANS`, `INC_EULER`, `INC_NAVIER_STOKES`, `INC_RANS`, `FEM_EULER`, `FEM_NAVIER_STOKES` | 7.0.0 |
 
-A marker can be defined as a Farfield boundary by addings its name to the `MARKER_FAR` option. No other values are necesseary for that option. The actual values which will be prescribed depend on the solver and other user input settings. More details can be found in the [Physical Definition](/docs_v7/Physical-Definition/) section.
+A marker can be defined as a Farfield boundary by addings its name to the `MARKER_FAR` option. No other values are necesseary for that option. The actual values which will be prescribed depend on the solver and other user input settings. More details can be found in the [Physical Definition](/su2/docs_v7/Physical-Definition/) section.
 
 ```
 MARKER_FAR= (farfield)

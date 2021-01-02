@@ -37,7 +37,7 @@ Structured meshes of increasing density are used to perform a grid convergence s
 4. 273x193 - 52224 quadrilaterals
 5. 545x385 - 208896 quadrilaterals
 
-![Turb Plate Mesh](/vandv_files/Flat_Plate/images/turb_plate_mesh_bcs.png)
+![Turb Plate Mesh](/su2/vandv_files/Flat_Plate/images/turb_plate_mesh_bcs.png)
 Figure (1): Mesh with boundary conditions: inlet (red), outlet (blue), far-field (orange), symmetry (purple), wall (green).
 
 If you would like to run the flat plate problems for yourself, you can use the files available in the [SU2 V&V repository](https://github.com/su2code/VandV/tree/master/rans/flatplate). Configuration files for both the SA and SST cases, as well as all grids in SU2 format, are provided. A Python script is also distributed in order to easily recreate the figures seen below from the data.

@@ -3,7 +3,7 @@ title: AD Build
 permalink: /docs/AD-Build/
 ---
 
-It is recommended to read the information at [Build from Source](/docs/Build-from-Source/) first prior reading this section.
+It is recommended to read the information at [Build from Source](/su2/docs/Build-from-Source/) first prior reading this section.
 
 The following requires a compiler which supports most of the C++11 features, i.e. GCC >= v4.7, Clang >= v3.0 or Intel C++ >= v12.0.
 
@@ -13,7 +13,7 @@ In order to use the discrete adjoint solver the compilation requires two additio
 The initialization of these libraries as well as the configuration of SU2 is handled by the python script `preconfigure.py` inside the main directory. This script accepts the **same arguments** as the usual configure script (except `CXXFLAGS=...`) but in addition it offers the option `--enable-autodiff` to enable AD (reverse mode) for the discrete adjoint solver.
 
 ### Example 
-Assume that your configuration (see [Simple Build](/docs/Simple-Build/) or [Parallel Build](/docs/Parallel-Build/)) is done using the command:
+Assume that your configuration (see [Simple Build](/su2/docs/Simple-Build/) or [Parallel Build](/su2/docs/Parallel-Build/)) is done using the command:
 
     ./configure --enable-mpi --prefix=$SU2_INSTALLPATH CXXFLAGS="-O3 -Wall"
 

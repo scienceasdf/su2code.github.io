@@ -26,7 +26,7 @@ export PATH=$SU2_RUN:$PATH
 export PYTHONPATH=$SU2_RUN:$PYTHONPATH
 ```
 
-where `<install_path>` is the path to the SU2 binaries (i.e. the folder that contains `SU2_CFD` etc.). If you have built [SU2 from source](/docs_v7/Build-SU2-Linux-MacOS/), it will be the path that you specified with the `--prefix` option (default: `/usr/bin`). The `export` commands are also printed after a successful configuration using `meson.py`.
+where `<install_path>` is the path to the SU2 binaries (i.e. the folder that contains `SU2_CFD` etc.). If you have built [SU2 from source](/su2/docs_v7/Build-SU2-Linux-MacOS/), it will be the path that you specified with the `--prefix` option (default: `/usr/bin`). The `export` commands are also printed after a successful configuration using `meson.py`.
 
 
 ### Optional: Install MPICH for parallel mode

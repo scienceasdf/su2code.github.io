@@ -38,7 +38,7 @@ as well as the restart files ([restart_flow_00497.dat](https://github.com/su2cod
 
 ## Tutorial ##
 
-The following tutorial will walk you through the steps required when solving for the flow about the NACA0012 airfoil using SU2. The tutorial will also address procedures for both serial and parallel computations. To this end, it is assumed you have already obtained and compiled SU2_CFD. If you have yet to complete these requirements, please see the [Download](/docs_v7/Download/) and [Installation](/docs_v7/Installation/) pages.
+The following tutorial will walk you through the steps required when solving for the flow about the NACA0012 airfoil using SU2. The tutorial will also address procedures for both serial and parallel computations. To this end, it is assumed you have already obtained and compiled SU2_CFD. If you have yet to complete these requirements, please see the [Download](/su2/docs_v7/Download/) and [Installation](/su2/docs_v7/Installation/) pages.
 
 ### Background ###
 
