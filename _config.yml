@@ -5,7 +5,7 @@ description: >
   Website for the SU2 Project
 
 baseurl: "/" # the subpath of your site, e.g. /blog/
-url: https://su2code.github.io # the base hostname & protocol for your site
+url: https://doc.qtser.xyz # the base hostname & protocol for your site
 git_address: https://github.com/su2code/SU2.git
 git_edit_address: https://github.com/su2code/su2code.github.io/blob/master
 

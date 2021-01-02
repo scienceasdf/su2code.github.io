@@ -15,7 +15,8 @@
             <ul class="nav navbar-nav">
                 <li {% if page.sectionid=='download' %} class="active" {% endif %}><a href="{{ "/download.html" | relative_url }}">Download</a></li>
                 <li {% if page.sectionid=='publications' %} class="active" {% endif %}><a href="{{ "/publications.html" | relative_url }}">Publications</a></li>
-                <li {% if page.sectionid=='docs' %} class="active" {% endif %}><a href="{{ "/docs_v7/home/" | relative_url }}">Docs</a></li>
+                <li {% if page.sectionid=='docs_v6' %} class="active" {% endif %}><a href="{{ "/docs/home/" | relative_url }}">Docs V6</a></li>
+                <li {% if page.sectionid=='docs' %} class="active" {% endif %}><a href="{{ "/docs_v7/home/" | relative_url }}">Docs V7</a></li>
                 <li {% if page.sectionid=='tutorials' %} class="active" {% endif %}><a href="{{ "/tutorials/home/" | relative_url }}">Tutorials</a></li>
                 <li {% if page.sectionid=='vandv' %} class="active" {% endif %}><a href="{{ "/vandv/home/" | relative_url }}">V&V</a></li>
                 <li {% if page.sectionid=='forum' %} class="active" {% endif %}><a href="{{ "https://www.cfd-online.com/Forums/su2/" }}">Forum</a></li>
