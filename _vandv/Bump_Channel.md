@@ -8,7 +8,7 @@ permalink: /vandv/Bump_Channel/
 | `RANS` | 7.0.0 |
 
 <p align="center">
-<img src="/vandv_files/Bump_Channel/images/bump_cf_0p75_gridconv_sst.png" alt="Skin Friction Grid Convergence SST x = 0.75" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cf_0p75_gridconv_sst.png" alt="Skin Friction Grid Convergence SST x = 0.75" />
 </p>
 
 
@@ -51,30 +51,30 @@ Both the SA and SST models exhibit excellent agreement in the figures below. Wit
 ### SA Model
 
 <p align="center">
-<img src="/vandv_files/Bump_Channel/images/bump_cd_gridconv_sa.png" alt="Drag Grid Convergence SA" />
-<img src="/vandv_files/Bump_Channel/images/bump_cl_gridconv_sa.png" alt="Lift Grid Convergence SA" />
-<img src="/vandv_files/Bump_Channel/images/bump_cf_0p63_gridconv_sa.png" alt="Skin Friction Grid Convergence SA x = 0.63" />
-<img src="/vandv_files/Bump_Channel/images/bump_cf_0p75_gridconv_sa.png" alt="Skin Friction Grid Convergence SA x = 0.75" />
-<img src="/vandv_files/Bump_Channel/images/bump_cf_0p87_gridconv_sa.png" alt="Skin Friction Grid Convergence SA x = 0.87" />
-<img src="/vandv_files/Bump_Channel/images/bump_cf_profile_sa.png" alt="Skin Friction Profile SA" />
-<img src="/vandv_files/Bump_Channel/images/bump_cp_profile_sa.png" alt="Pressure Profile SA" />
-<img src="/vandv_files/Bump_Channel/images/bump_eddy_profile_sa.png" alt="Eddy Viscosity Profile SA" />
-<img src="/vandv_files/Bump_Channel/images/bump_vel_profile_sa.png" alt="Velocity Profile SA" />
-<img src="/vandv_files/Bump_Channel/images/bump_residual_convergence_sa.png" alt="Residual Convergence SA" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cd_gridconv_sa.png" alt="Drag Grid Convergence SA" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cl_gridconv_sa.png" alt="Lift Grid Convergence SA" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cf_0p63_gridconv_sa.png" alt="Skin Friction Grid Convergence SA x = 0.63" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cf_0p75_gridconv_sa.png" alt="Skin Friction Grid Convergence SA x = 0.75" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cf_0p87_gridconv_sa.png" alt="Skin Friction Grid Convergence SA x = 0.87" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cf_profile_sa.png" alt="Skin Friction Profile SA" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cp_profile_sa.png" alt="Pressure Profile SA" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_eddy_profile_sa.png" alt="Eddy Viscosity Profile SA" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_vel_profile_sa.png" alt="Velocity Profile SA" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_residual_convergence_sa.png" alt="Residual Convergence SA" />
 </p>
 
 ### SST Model
 
 <p align="center">
-<img src="/vandv_files/Bump_Channel/images/bump_cd_gridconv_sst.png" alt="Drag Grid Convergence SST" />
-<img src="/vandv_files/Bump_Channel/images/bump_cl_gridconv_sst.png" alt="Lift Grid Convergence SST" />
-<img src="/vandv_files/Bump_Channel/images/bump_cf_0p63_gridconv_sst.png" alt="Skin Friction Grid Convergence SST x = 0.63" />
-<img src="/vandv_files/Bump_Channel/images/bump_cf_0p75_gridconv_sst.png" alt="Skin Friction Grid Convergence SST x = 0.75" />
-<img src="/vandv_files/Bump_Channel/images/bump_cf_0p87_gridconv_sst.png" alt="Skin Friction Grid Convergence SST x = 0.87" />
-<img src="/vandv_files/Bump_Channel/images/bump_cf_profile_sst.png" alt="Skin Friction Profile SST" />
-<img src="/vandv_files/Bump_Channel/images/bump_cp_profile_sst.png" alt="Pressure Profile SST" />
-<img src="/vandv_files/Bump_Channel/images/bump_eddy_profile_sst.png" alt="Eddy Viscosity Profile SST" />
-<img src="/vandv_files/Bump_Channel/images/bump_vel_profile_sst.png" alt="Velocity Profile SST" />
-<img src="/vandv_files/Bump_Channel/images/bump_residual_convergence_sst.png" alt="Residual Convergence SST" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cd_gridconv_sst.png" alt="Drag Grid Convergence SST" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cl_gridconv_sst.png" alt="Lift Grid Convergence SST" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cf_0p63_gridconv_sst.png" alt="Skin Friction Grid Convergence SST x = 0.63" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cf_0p75_gridconv_sst.png" alt="Skin Friction Grid Convergence SST x = 0.75" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cf_0p87_gridconv_sst.png" alt="Skin Friction Grid Convergence SST x = 0.87" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cf_profile_sst.png" alt="Skin Friction Profile SST" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_cp_profile_sst.png" alt="Pressure Profile SST" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_eddy_profile_sst.png" alt="Eddy Viscosity Profile SST" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_vel_profile_sst.png" alt="Velocity Profile SST" />
+<img src="/su2/vandv_files/Bump_Channel/images/bump_residual_convergence_sst.png" alt="Residual Convergence SST" />
 </p>
 
